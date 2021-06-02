@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Reactor7";
+  src: url("./reactor7/Reactor7.ttf");
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Reactor7";
+  padding: 0;
+}
+
+.cloud,
+.aerith,
+.red {
+  display: flex;
+}
+
+.cloud img,
+.aerith img,
+.red img {
+  height: 8em;
+}
+.cloud p,
+.aerith p,
+.red p {
+  bottom: 0.5em;
+  display: flexbox;
+  position: relative;
+  font-size: 2em;
+  padding-left: 0.5em;
+}
+
+.wholeWindow {
+  background: rgb(0, 0, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 176, 1) 0%,
+    rgba(0, 0, 32, 1) 100%
+  );
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: solid 5px rgb(203, 203, 203);
+  border-radius: 2%;
+  width: 98.5%;
+  height: 98.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.mainPortion {
+  padding-left: 1em;
+  display: flexbox;
+  width: 60%;
+}
+
+.sideBar {
+  display: flexbox;
+  padding-left: 1em;
+  width: 30%;
+  background: rgb(0, 0, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 176, 1) 0%,
+    rgba(0, 0, 32, 1) 100%
+  );
+  color: #fff;
+  border: solid 5px rgb(203, 203, 203);
+  border-radius: 2%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 3em;
+  line-height: 0;
+}
+
+button {
+  border: 0;
+  border-radius: 15%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+button.play {
+  background-color: green;
+  background-image: url("play.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+button.paused {
+  background-color: red;
+  background-image: url("pause.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
